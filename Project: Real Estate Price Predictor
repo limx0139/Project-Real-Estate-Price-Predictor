@@ -1,0 +1,26 @@
+Project: Real Estate Price Predictor
+
+Actors: User; System; Prospective Sellers;
+
+Usecase: PredictPrice;
+
+PredictPrice.desc: 
+    User input location and housing specs
+    System outputs predicted price range(data reference from database)
+    System outputs links to prospective sellers(rather challenging to implement)
+
+
+Databases to incorporate: 
+    HDB housing data
+
+Possible Issues: 
+    Prices can fluctuate with time, likely data will quickly become outdated.
+    HDB database already exists //https://services2.hdb.gov.sg/webapp/BB33RTIS/BB33PReslTrans.jsp
+        Addressing the issue: 
+            add predicted costs based on current trends and previous costs to more accurately predict the current costs
+            Include other datasets rather than just HDB housing options
+
+Objects
+    UI
+        buttons
+            datasets
